@@ -24,13 +24,13 @@ public class DecToBinAndHex extends JFrame {
                 try {
                     int num = Integer.parseInt(tf.getText());
                     if (num <= 0)
-                        JOptionPane.showMessageDialog(f, "Enter only positive integer");
+                        JOptionPane.showMessageDialog(f, "Enter only positive integer", "Alert", JOPtionPane.WARNING_MESSAGE);
                     else {
                         l3.setText(decToBin(num));
                         l5.setText(decToHex(num));
                     }
                 } catch (NumberFormatException ev) {
-                    JOptionPane.showMessageDialog(f, "Enter only positive integer");
+                    JOptionPane.showMessageDialog(f, "Enter only positive integer", "Alert", JOPtionPane.WARNING_MESSAGE);
                 }
             }
         });
